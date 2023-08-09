@@ -18,8 +18,6 @@
 | 조현진 | [ComSun](https://github.com/Com-Sun)|
 | 양승아 | [tmddk512](https://github.com/tmddk512)|
 | 전하은 | [21900646](https://github.com/21900646)|
-| 김민수 | [oct-sky-out](https://github.com/oct-sky-out) |
-| 김세미 | [SemiKimm](https://github.com/SemiKimm?tab=following) |
 
 ## How to?
 스터디 진행 방식
