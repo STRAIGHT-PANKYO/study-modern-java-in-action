@@ -1,10 +1,14 @@
-package com.straightpankyo.modernjava;
+package com.straightpankyo.modernjava.ch2;
 
-import static com.straightpankyo.modernjava.Size.SMALL;
+import static com.straightpankyo.modernjava.ch2.Size.SMALL;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.Callable;
+import java.util.function.BiFunction;
+import java.util.function.Function;
 import java.util.function.Predicate;
+import java.util.function.Supplier;
 
 public class Main {
 
@@ -19,9 +23,6 @@ public class Main {
         return result;
     }
 
-    private List<Unit> filterUnitsBySize(List<Unit> units, Size size) {
-        ...
-    }
 
     private List<Unit> filterUnits(List<Unit> unitList, UnitPredicate p) {
         ArrayList<Unit> result = new ArrayList<>();
@@ -35,14 +36,6 @@ public class Main {
     }
 
 
-    private List<Unit> filterUnits2() {
-        ArrayList<Unit> unitList = new ArrayList<>();
-        List<Unit> units = filterUnits(unitList, unit -> SMALL.equals(unit.getSize()));
-
-
-        filter(unitList, (Unit unit) -> SMALL.equals(unit.getSize()));
-    }
-
     private <T> List<T> filter(List<T> list, Predicate<T> p) {
         ArrayList<T> result = new ArrayList<>();
         for (T e : list) {
@@ -50,6 +43,9 @@ public class Main {
                 result.add(e);
             }
         }
+
+        Supplier<Unit> marine = Unit::new;
+        BiFunction<String, Integer, Unit> strangeMarine = Unit::new;
 
         return result;
     }

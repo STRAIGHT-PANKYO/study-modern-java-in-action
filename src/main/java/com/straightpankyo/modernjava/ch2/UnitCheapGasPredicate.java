@@ -1,4 +1,4 @@
-package com.straightpankyo.modernjava;
+package com.straightpankyo.modernjava.ch2;
 
 public class UnitCheapGasPredicate implements UnitPredicate{
 
